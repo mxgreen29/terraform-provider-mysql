@@ -24,6 +24,9 @@ provider "mysql" {
 ```
 Multiple create databases
 -----
+resource "aws_db_instance" "MySQL" {
+  count = var.rds_count # 1 or 0 
+  ...
 }
 ```
 provider "mysql" {
